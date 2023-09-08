@@ -1,0 +1,7 @@
+Write a program to input marks of three tests of a student (all integers). Then calculate and print the average of all test marks.
+
+Marks1 = int(input())
+Marks2 = int(input())
+Marks3 = int(input())
+Average = (Marks1 + Marks2 + Marks3) / 3
+print(Average)

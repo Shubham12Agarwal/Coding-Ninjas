@@ -1,0 +1,23 @@
+#Check whether a given number ’n’ is a palindrome number.
+#Palindrome numbers are the numbers that don't change when reversed.
+#Return boolean value true or false.
+
+#Example:
+#Input: 'n' = 51415
+#Output: true
+#Explanation: On reversing, 51415 gives 51415.
+
+n = int(input())
+temp = n
+rev = 0
+a = 0
+
+while(n > 0):
+    a = n % 10
+    rev = rev * 10 + a
+    n = n // 10
+
+if(temp == rev):
+    print("true")
+else:
+    print("false")

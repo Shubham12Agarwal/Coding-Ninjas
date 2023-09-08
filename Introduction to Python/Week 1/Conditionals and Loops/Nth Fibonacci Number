@@ -1,0 +1,20 @@
+#Write a program to find the Nth Fibonacci number using loops.
+#Take n as input
+#Code should print Fibonacci Numbers till n
+
+n = int(input())
+a = 0
+b = 1
+count = 0
+
+if (n <= 0):
+    exit()
+elif (n == 1):
+    print(b)
+else:
+    while (count < n):
+        c = a + b
+        a = b
+        b = c
+        count = count + 1
+    print(a)

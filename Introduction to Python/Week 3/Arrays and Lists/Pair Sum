@@ -1,0 +1,15 @@
+#You have been given an integer array/list(ARR) and a number X. Find and return the total number of pairs in the array/list which sum to X.
+
+def pairSum(arr, n, x) :
+    Number_Of_Pairs = 0
+    for i in range(n):
+        for j in range((i+1), n):
+            if arr[i] + arr[j] == x:
+                Number_Of_Pairs = Number_Of_Pairs + 1
+    return Number_Of_Pairs
+
+n = int(input())
+x = int(input())
+arr = [int(i) for i in input().split()]
+Pairs = pairSum(arr, n, x)
+print(Pairs)

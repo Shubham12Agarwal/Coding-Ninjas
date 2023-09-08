@@ -1,0 +1,18 @@
+#You have been given an array/list(ARR) of size N. You need to swap every pair of alternate elements in the array/list.
+
+# Example:
+# Input N: 6
+# Input array: 9 3 6 12 4 32
+
+#Output: 3 9 12 6 32 4
+
+
+def swapAlternate(arr, n) :
+    for i in range(0, n-1, 2):
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+    return arr
+        
+n = int(input())
+arr = [int(i) for i in input().split()]
+arr = swapAlternate(arr, n)
+print(arr)

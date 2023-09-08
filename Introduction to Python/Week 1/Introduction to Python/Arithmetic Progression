@@ -1,9 +1,12 @@
-You are given first three entries of an arithmetic progression. You have to calculate the common difference and print it.
+#You are given first three entries of an arithmetic progression. You have to calculate the common difference and print it.
 
+# Read the first three terms of the arithmetic progression from input
 a = int(input())
 b = int(input())
 c = int(input())
 
+# Calculate the common difference
 d = c - b
 
+# Print the common difference
 print(d)

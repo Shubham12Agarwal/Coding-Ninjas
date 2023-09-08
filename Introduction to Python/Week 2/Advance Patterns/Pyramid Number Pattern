@@ -1,0 +1,30 @@
+#Print the following pattern for the given number of rows.
+
+#Pattern for N = 4
+#    1
+#   212
+#  32123
+# 4321234
+
+n = int(input())
+i = 1
+while(i<=n):
+    spaces = 1
+    while(spaces<= n - i):
+        print(' ', end='')
+        spaces = spaces + 1
+    j = i
+    inc_num = 1
+    while(inc_num <= i):
+        print(j, end='')
+        j = j - 1
+        inc_num = inc_num + 1
+    
+    k = 2
+    dec_num = 1
+    while(dec_num<= i-1):
+        print(k,end='')
+        k = k + 1
+        dec_num = dec_num + 1
+    print()
+    i = i + 1
